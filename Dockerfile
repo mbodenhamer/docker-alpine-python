@@ -1,8 +1,7 @@
-FROM mbodenhamer/alpine:latest
+FROM python:2-alpine
 MAINTAINER Matt Bodenhamer <mbodenhamer@mbodenhamer.com>
 
 RUN apk update && apk add \
-    python-dev \
-    py-pip
+    bash
 
-RUN pip install -U pip
+CMD ["python2"]
