@@ -1,7 +1,10 @@
 FROM python:2-alpine
 MAINTAINER Matt Bodenhamer <mbodenhamer@mbodenhamer.com>
 
-RUN apk update && apk add \
-    bash
+RUN apk add --no-cache \
+    bash \
+    gcc \
+    libc-dev \
+    make
 
 CMD ["python2"]
