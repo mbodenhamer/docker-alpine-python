@@ -1,0 +1,13 @@
+sudo: required
+language: python
+services:
+  - docker
+
+before_install:
+  - pip install yatr
+
+install:
+  - yatr travis-install
+
+script:
+  - yatr test
