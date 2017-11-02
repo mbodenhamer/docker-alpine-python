@@ -1,6 +1,6 @@
 # -*- dockerfile -*-
 FROM python:2-alpine
-MAINTAINER Matt Bodenhamer <mbodenhamer@mbodenhamer.com>
+MAINTAINER {{maintainer_name}} <{{maintainer_email}}>
 
 RUN apk add --no-cache \
     bash \
@@ -9,7 +9,7 @@ RUN apk add --no-cache \
     make
 
 RUN pip install -U --no-cache \
-    depman==0.3.4 \
-    yatr==0.0.5
+    depman=={{depman_version}} \
+    yatr=={{yatr_version}}
 
 CMD ["python2"]
