@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - pip install yatr
+  - pip install -U yatr
 
 install:
   - yatr travis-install
