@@ -12,4 +12,8 @@ RUN pip install -U --no-cache \
     depman=={{depman_version}} \
     yatr=={{yatr_version}}
 
+RUN mkdir -p /etc/bash_completion.d \
+    && yatr --install-bash-completions > /dev/null \
+    && echo "source /etc/bash_completion.d/yatr" >> /root/.bashrc
+
 CMD ["python2"]
