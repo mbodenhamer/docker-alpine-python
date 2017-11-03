@@ -10,6 +10,7 @@ To launch a container inside a Python session, run:
 
     $ docker run --rm -it -v `pwd`:/app mbodenhamer/alpine-python:latest
 
+
 A container can also be launched with Python arguments, like so:
 
     $ docker run --rm -it -v `pwd`:/app mbodenhamer/alpine-python:latest python --version
