@@ -9,7 +9,7 @@ load test_helpers
 
 @test "[$TEST_FILE] Check yatr version" {
     run launch yatr --version
-    [[ ${lines[0]} =~ "yatr 0.0.5" ]]
+    [[ ${lines[0]} =~ "yatr 0.0.10" ]]
 }
 
 @test "[$TEST_FILE] Check system Python version" {
