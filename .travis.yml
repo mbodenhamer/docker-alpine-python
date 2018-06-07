@@ -6,8 +6,8 @@ services:
 before_install:
   - pip install -U yatr
 
-install:
-  - yatr travis-install
+# install:
+#   - yatr travis-install
 
 script:
   - yatr test
