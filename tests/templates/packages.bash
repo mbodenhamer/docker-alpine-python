@@ -4,12 +4,12 @@ load test_helpers
 
 @test "[$TEST_FILE] Check depman version" {
     run launch depman version
-    [[ ${lines[0]} =~ "depman {{depman_version}}" ]]
+    [[ ${lines[0]} =~ "depman {{packages.depman.version.stable}}" ]]
 }
 
 @test "[$TEST_FILE] Check yatr version" {
     run launch yatr --version
-    [[ ${lines[0]} =~ "yatr {{yatr_version}}" ]]
+    [[ ${lines[0]} =~ "yatr {{packages.yatr.version.stable}}" ]]
 }
 
 @test "[$TEST_FILE] Check system Python version" {

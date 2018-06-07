@@ -1,8 +1,10 @@
+#-------------------------------------------------------------------------------
 include:
   - "{{urlbase}}/git/operations.yml"
   - "{{urlbase}}/docker/automated_build.yml"
   - "{{urlbase}}/python/packages.yml"
 
+#-------------------------------------------------------------------------------
 macros:
   urlbase: https://raw.githubusercontent.com/mbodenhamer/yatrfiles/master/yatrfiles
   name: alpine-python
@@ -12,7 +14,10 @@ macros:
   example_1: "{{example_base}}"
   example_2: "{{example_base}} python --version"
 
+#-------------------------------------------------------------------------------
 tasks:
   examples:
     - "{{example_1}}"
     - "{{example_2}}"
+
+#-------------------------------------------------------------------------------
