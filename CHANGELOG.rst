@@ -10,8 +10,8 @@ Changelog
 ~~~~~~~~~~~~~~~~
 
 * Updated installed packages:
-  * ``depman = 0.3.4``
-  * ``yatr = 0.0.10``
+  1. ``depman = 0.3.4``
+  2. ``yatr = 0.0.10``
 
 0.1 (2017-11-02)
 ~~~~~~~~~~~~~~~~
